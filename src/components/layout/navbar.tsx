@@ -805,16 +805,9 @@ export function Navbar() {
             <div className="hidden min-w-0 flex-1 items-center justify-end gap-2 md:flex">
               <ThemeToggle />
               <Button
-                variant="ghost"
-                size="sm"
-                onClick={() => onNavigate("#contact")}
-              >
-                Log in
-              </Button>
-              <Button
                 variant="default"
                 size="sm"
-                onClick={() => onNavigate("#final-cta")}
+                onClick={() => onNavigate("https://app.repolith.my.id")}
               >
                 Start Free Trial
               </Button>

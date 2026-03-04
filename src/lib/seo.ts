@@ -13,6 +13,7 @@ type LinkTag = {
   type?: string;
   sizes?: string;
   media?: string;
+  crossOrigin?: "anonymous" | "use-credentials";
 };
 
 type ScriptTag = {
@@ -37,7 +38,7 @@ export type BlogSeoPayload = {
   date?: string;
 };
 
-const SITE_URL = "https://better-hub.com";
+const SITE_URL = "https://repolith.my.id";
 const SITE_NAME = "Repolith";
 const DEFAULT_TITLE =
   "Repolith — Re-imagining code collaboration for humans and agents";
@@ -54,7 +55,7 @@ const DEFAULT_KEYWORDS = [
   "GitHub workflow",
 ];
 const AUTHOR = "Repolith Team";
-const CONTACT_EMAIL = "hello@better-hub.com";
+const CONTACT_EMAIL = "hello@repolith.my.id";
 const SOCIAL_PROFILES = ["https://github.com/radityprtama/repolith"];
 
 export const absoluteUrl = (path = "/") => {
